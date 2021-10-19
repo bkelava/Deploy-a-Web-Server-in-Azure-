@@ -60,3 +60,6 @@ terraform init
 ```
 ![image](images/terraform-init.png)
 
+List of Azure VM
+![image](Images/az-vm-list-table)
+
