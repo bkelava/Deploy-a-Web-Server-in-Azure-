@@ -35,6 +35,7 @@ az image list -o table
 ```
 ![image](images/az-image-list.png)
 2. If you successfully deployed infrastructure, you should get message show below:
+
 ![image](images/terraform-apply.png)
 
 3. Check resources using command below:
@@ -48,7 +49,7 @@ terraform destroy
 ![image](images/terraform-destroy.png)
 ### Additional Screenshots
 Policies in Azure - list and table view
-![image-list](images/policies-list-png)
+![image-list](images/policies-list.png)
 ![image-table](images/policies-table.png)
 
 Tagging policy definition
