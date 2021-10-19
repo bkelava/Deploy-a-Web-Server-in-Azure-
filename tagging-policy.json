@@ -1,0 +1,38 @@
+{
+    "properties": {
+      "displayName": "tagging-policy",
+      "policyType": "Custom",
+      "mode": "Indexed",
+      "metadata": {
+        "createdBy": "fde68a63-b187-44df-a5ac-0f3013b79d3b",
+        "createdOn": "2021-10-14T14:09:34.7754578Z",
+        "updatedBy": "fde68a63-b187-44df-a5ac-0f3013b79d3b",
+        "updatedOn": "2021-10-15T09:16:54.0343789Z"
+      },
+      "parameters": {},
+      "policyRule": {
+        "if": {
+          "allOf": [
+            {
+              "value": "[lessOrEquals(length(field('tags')), 1)]",
+              "exists": "false"
+            }
+          ]
+        },
+        "then": {
+          "effect": "deny"
+        }
+      }
+    },
+    "id": "/subscriptions/2a8d147f-5db1-4238-9954-7fbf0171a8bf/providers/Microsoft.Authorization/policyDefinitions/1f603873-0b07-4023-96cc-539f237ce749",
+    "type": "Microsoft.Authorization/policyDefinitions",
+    "name": "1f603873-0b07-4023-96cc-539f237ce749",
+    "systemData": {
+      "createdBy": "bozidar.kelava@hotmail.com",
+      "createdByType": "User",
+      "createdAt": "2021-10-14T14:09:34.7418193Z",
+      "lastModifiedBy": "bozidar.kelava@hotmail.com",
+      "lastModifiedByType": "User",
+      "lastModifiedAt": "2021-10-15T09:16:54.0006825Z"
+    }
+  }
